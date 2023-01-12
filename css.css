@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+}
+
+.cover{
+    position: relative;
+z-index: -2;
+
+}
+.cover::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.325);
+    width: 100%;
+    height: 110vh;
+    position: r;
+    left: 0;
+    top: 0;
+    position: absolute;
+z-index: 1;
+}
+.img{
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+}
+.title{
+    z-index: 2;
+    background-color: rgba(207, 230, 214, 0.182);
+    position: relative;
+
+}
+.title h1{
+    font-family: 'Fugaz One', cursive;
+    color: rgb(70, 5, 5);
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    background-color: #b9a58b57;
+
+}
+.content::before{
+    background-color: rgb(97, 4, 4);
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.39);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100vh;
+}
+.content p{
+    font-family: 'Sofia Sans', sans-serif;
+font-size: 15px;
+padding-top: 15px;
+
+}
+.download{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+
+}
+.photos {
+ margin-top: 100px;
+}
+.photos img {
+    width: 100px;
+}
+.photos img:hover{
+    width: 200px;
+}
